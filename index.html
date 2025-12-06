@@ -12,7 +12,8 @@
 <body>
     <div class="hero-section">
         <header>
-            <div class="header-inner">
+            <div class="container">
+                <div class="header-inner">
                 <!-- Logo -->
                 <div class="logo">
                     <div class="img-wrapper">
@@ -39,6 +40,7 @@
                     <div class="name"><h1>Sudarvizhi Ravindran</h1></div>
                     <h2>Product Development / Fashion Styling Assistant</h2>
                 </div>
+            </div>
             </div>
         </header>
     </div>
@@ -106,10 +108,10 @@
                 <div class="swiper designed-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="images/Design-Styled/babyshower.JPG" alt="">
+                            <img src="images/Design-Styled/babyshower-thumb.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/Design-Styled/Wed-1.JPG" alt="">
+                            <img src="images/Design-Styled/Wed-thumb.png" alt="">
                         </div>
                         <div class="swiper-slide">
                             <img src="images/Design-Styled/SET-1-1.png" alt="">
@@ -160,10 +162,13 @@
                         </div>
                     </div>
 
-                    <!-- Navigation arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="custom-button-next">
+                        <img src="images/right-arrow.png" alt="">
+                    </div>
+                    <div class="custom-button-prev">
+                        <img src="images/left-arrow.png" alt="">
+                    </div>
             </div>
 
             <div class="tab-content" id="tab3">
@@ -192,12 +197,13 @@
                         </div>
                         
                     </div>
-
-
-                    <!-- Navigation arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="custom-button-next">
+                        <img src="images/right-arrow.png" alt="">
+                    </div>
+                    <div class="custom-button-prev">
+                        <img src="images/left-arrow.png" alt="">
+                    </div>
             </div>
 
             <div class="tab-content" id="tab4">
@@ -223,42 +229,47 @@
                         </div>
                         
                     </div>
-
-
-                    <!-- Navigation arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+                <div class="custom-button-next">
+                        <img src="images/right-arrow.png" alt="">
+                    </div>
+                    <div class="custom-button-prev">
+                        <img src="images/left-arrow.png" alt="">
+                    </div>
              </div>
 
             </div>
 
             <div class="explore-btn">
-                    <a href="Portfolio.html"><p>Explore Btn</p><img src="images/explore.png"></a>
+                    <a href="Portfolio.html"><p>Explore More</p><img src="images/right-arrow.png"></a>
             </div>
         </div>
     </div>
 
-    <footer style="display: none;">
-        <div class="footer-inner">
+    <footer>
+       <div class="container">
+         <div class="footer-inner">
             <div class="logo">
                 <img src="images/Logo.png" alt="">
             </div>
-            <div class="footer-nav">
+            <div class="navbar">
                 <ul>
-                    <li>
-                        <a href="">CV</a>
-                    </li>
-                    <li>
-                        <a href="">Projects</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="mailto:test@gmail.com">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-icon"></div>
+            <div class="footer-icon">
+                <div class="icon-box">
+                    <img src="images/FB.png" alt="">
+                </div>
+                <div class="icon-box">
+                    <img src="images/Instagram.png" alt="">
+                </div>
+            </div>
         </div>
+       </div>
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -281,8 +292,8 @@ const themeswiper = new Swiper(".theme-based-slider", {
     slidesPerView: 4, 
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".custom-button-next",
+        prevEl: ".custom-button-prev",
     },
 });
 
@@ -292,8 +303,8 @@ const merchandswiper = new Swiper(".merchand-slider", {
     slidesPerView: 4, 
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".custom-button-next",
+        prevEl: ".custom-button-prev",
     },
 });
 
