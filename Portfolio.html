@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+     <header>
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="img-wrapper">
+                        <img src="images/Logo.png" alt="Sundarvizhi">
+                    </div>
+                </div>
+
+                <!-- NavBar -->
+                 <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                 </div>
+            </div>
+
+    </header>
+
+    <div class="breadcrumbs-wrapper">
+        <div class="container">
+            <h2 class="breadcrumb-title">Portfolio</h2>
+            <div class="breadcrumbs-nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><img src="images/right.png" width="12px"></li>
+                    <li><a href="" class="active">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-page">
+        <div class="container">
+            <div class="design-and-styed">
+                <div class="portfolio-header">
+                    <h3>Design and Styled</h3>
+                    <div class="cilent-box wedd-and-babyshower">
+                        <div class="image-grid">
+                            <div class="image-column">
+                                <img src="images/Design-Styled/Wed-1.JPG" alt="">
+                            </div>
+                            <div class="image-column">
+                                <div class="content">
+                                    <p>It’s a truly special milestone for a debut designer to create for the same client twice—first for their wedding, a celebration of laove and new beginnings, and later for their baby shower, a moment of growth and family. It reflects trust, connection, and shared joy, showing how the designer’s work becomes part of the client’s life journey and most meaningful memories.</p>
+                                </div>
+                                <img src="images/Design-Styled/babyshower.JPG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cilent-image-slider">
+                        <div class="cilent-slider-inner">
+                            <div class="cilent-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-1-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-1-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-1-3.png" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-2-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-2-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-2-3.png" alt="">
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-3-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-3-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-3-3.png" alt="">
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-4-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-4-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/Design-Styled/SET-4-3.png" alt="">
+                                    </div>
+                                </div>
+                        
+
+                                <!-- Pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- Navigation arrows -->
+                                <div class="custom-prev"></div>
+                                <div class="custom-next"></div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+
+const swiper = new Swiper(".cilent-slider", {
+    loop: true,
+    spaceBetween: 40,
+    slidesPerView: 3, 
+     slidesPerGroup: 3, 
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+    },
+});
+</script>
+</body>
+</html>

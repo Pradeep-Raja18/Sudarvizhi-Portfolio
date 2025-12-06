@@ -1,0 +1,245 @@
+/* ------- Font Importing ------- */
+
+/* Olivera */
+@font-face {
+    font-family: 'Olivera';
+    src: url('/Fonts/Olivera.woff2') format('woff2'),
+        url('/Fonts/Olivera.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* ----- Root Variable ----- */
+:root{
+  --primary-color:#131313;
+  --secondary-color:#F4B03D;
+    --primary-font:"Raleway", sans-serif;
+  --secondary-font:'Olivera';
+}
+
+
+/* ------ Overall Style ------ */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.heading {
+    font-size: 80px;
+    font-family: var(--secondary-font);
+    text-align: center;
+    color: #f5f5f5;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.container{
+    max-width: 1420px;
+    padding: 0px 50px;
+    margin: 0 auto;
+}
+
+/* ----- Header -----*/
+.hero-section{
+    position: relative;
+}
+.hero-section:before{
+    content: '';
+    background-color: #303030;
+    width: 50%;
+    height: 80vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    filter: blur(300px);
+    transform: translateX(-50%);
+}
+.logo {
+    width: 220px;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #959595;
+    font-size:18px;
+    font-weight: 400;   
+}
+.navbar ul li a:hover{
+    color: #fff;
+}
+.hero-content {
+    text-align: center;
+    padding: 40px 0px;
+    font-family: var(--secondary-font);
+    color:#fff;
+    position: relative;
+}
+.hero-content h3{
+    font-size:92px;
+    letter-spacing:5px;
+    font-weight:lighter;
+    color:#e5e5e5;
+}
+.hero-content h1{
+    font-size: 140px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    background-image: url(../images/text-bg.png);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    font-weight:lighter;
+}
+.hero-content h2{
+    font-size:52px;
+    letter-spacing:5px;
+    font-weight:lighter;
+    color:#e5e5e5;  
+    font-weight:lighter;
+}
+
+.hero-image{
+    position: relative;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position: relative;
+  z-index: 3;
+}
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 5px 8px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.hero-image img {
+    border-radius: 10px;
+}
+.hero-image .grid-container .column:first-child {
+    padding-top: 100px;
+}
+.hero-image .grid-container .column:nth-child(3) {
+    padding-top: 130px;
+}
+.hero-image .grid-container .column:nth-child(4) {
+    padding-top: 30px;
+}
+.hero-image {
+    padding-top: 100px;
+}
+.hero-pattern-one {
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+.hero-pattern-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* Portfolio */
+.portfolio{
+    background-image: url('../images/portfolio-bg.png');
+    background-position: 100% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+}
+.portfolio-tab {
+    padding-top: 50px;
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.tab-btn.active {
+  background: #333;
+  color: #fff;
+}
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+.tab-content.active {
+  display: block;
+}
+/* Custom Arrows */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-prev { left: 10px; }
+.custom-next { right: 10px; }
+
+.custom-prev:hover,
+.custom-next:hover {
+  background: rgba(0,0,0,0.8);
+}
