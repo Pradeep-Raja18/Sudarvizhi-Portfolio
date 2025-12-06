@@ -32,15 +32,16 @@
             </div>
 
     </header>
+    
 
     <div class="breadcrumbs-wrapper">
         <div class="container">
             <h2 class="breadcrumb-title">Portfolio</h2>
             <div class="breadcrumbs-nav">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><img src="images/right.png" width="12px"></li>
-                    <li><a href="" class="active">Portfolio</a></li>
+                    <li><a href="Portfolio.html" class="active">Portfolio</a></li>
                 </ul>
             </div>
         </div>
@@ -48,9 +49,9 @@
 
     <div class="portfolio-page">
         <div class="container">
-            <div class="design-and-styed">
+            <div class="design-and-styed" id="design-and-styed">
                 <div class="portfolio-header">
-                    <h3>Design and Styled</h3>
+                    <h3>Designed and Styled</h3>
                     <div class="cilent-box wedd-and-babyshower">
                         <div class="image-grid">
                             <div class="image-column">
@@ -65,7 +66,8 @@
                         </div>
                     </div>
                     <div class="cilent-image-slider">
-                        <div class="cilent-slider-inner">
+                        <div class="container">
+                            <div class="cilent-slider-inner">
                             <div class="cilent-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -110,20 +112,39 @@
                                 </div>
                         
 
-                                <!-- Pagination -->
-                                <div class="swiper-pagination"></div>
 
-                                <!-- Navigation arrows -->
-                                <div class="custom-prev"></div>
-                                <div class="custom-next"></div>
+                                
 
+                            </div>
+                            <!-- Navigation arrows -->
+                                <div class="custom-button-next">
+                                    <img src="images/right-arrow.png" alt="">
+                                </div>
+                                <div class="custom-button-prev">
+                                    <img src="images/left-arrow.png" alt="">
+                                </div>
                         </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer style="display: none;">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img src="images/Logo.png" alt="logo">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
@@ -139,8 +160,8 @@ const swiper = new Swiper(".cilent-slider", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
+        nextEl: ".custom-button-next",
+        prevEl: ".custom-button-prev",
     },
 });
 </script>
